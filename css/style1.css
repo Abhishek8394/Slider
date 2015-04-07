@@ -1,0 +1,46 @@
+.myul{
+	list-style: none;
+}
+.pullmenu:hover{
+	text-decoration: none;	
+	}
+.pullmenu{
+	font-size: 2em;
+}
+body{
+	position: absolute;
+	transition:left 2s ease;
+}
+@media screen and (max-width: 700px){
+	.mysidebar{
+	position: absolute;
+	background-color: white;
+	width: auto;
+	margin-left: 0px;
+	padding-left: 0px;
+	left:-600px;
+	z-index: 1100;
+	transition: left 2s ease;
+}
+	.myul{
+		padding-left: 0;
+		margin-right: 0px;
+	}
+	.pullmenu{
+		margin-top: -3%;
+		margin-left: 0px;
+		transition:margin 2s ease;
+	}
+}
+@media screen and (min-width: 700px){
+	.pullmenu{
+		display: none;
+	}
+	.mysidebar{
+		width:auto;
+		background-color: #9999FFs;
+		display: block;
+		margin-left:0px;
+		transition: margin 2s ease;
+	}
+}
